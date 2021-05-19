@@ -233,7 +233,7 @@ class JMVehicleSpawnerModule: JMRenderableModuleBase
 
 		EntityAI ent;
 		//if ( !Class.CastTo( ent, GetGame().CreateObjectEx( file.VehicleName, position, ECE_CREATEPHYSICS ) ) )
-		if ( !Class.CastTo( ent, GetGame().CreateObject( file.VehicleName, position, false, false, true ) ) )
+		if ( !Class.CastTo( ent, GetGame().CreateObject( file.VehicleName, position, false, true, true ) ) )
 			return NULL;
 
 		for ( int j = 0; j < attachments.Count(); j++ )
